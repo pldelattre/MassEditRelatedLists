@@ -1,0 +1,143 @@
+<aura:component controller="MassEditRLCtrl">
+	
+    <aura:attribute name="relatedList" type="Map" description="a single RL"/>
+    <aura:attribute name="records" type="Map" description="records pulled from apex"/>
+    <aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="sObjectName" type="string"/>
+    <aura:attribute type="String" name="myDomain" />
+    <aura:attribute name="maxRowCount" type="String" default="30"/>
+    <aura:attribute name="hideNonUpdateable" type="Boolean" default="false"/>
+    <aura:attribute name="displayPicklistAsText" type="Boolean" default="false"/>
+    <aura:attribute name="displaySaveStatus" type="Boolean" default="false"/>
+    <aura:attribute name="isUnsavedRecords" type="Boolean" default="false"/>
+    <aura:attribute name="displayCreateRowButton" type="Boolean" default="true"/>
+    <aura:attribute name="searchAndReplace" type="Map" description="contains search and replace parameters" default="{searchFor:'',replaceBy:'',isCaseSensitive:false,colValue:'All columns',columns:[{value:'All columns',label:'All columns'}]}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    <aura:method name="refreshData" action="{!c.doInit}" description="reload rows in related list"> 
+	</aura:method>
+    
+    
+    
+      <lightning:card class="slds-card_boundary">
+        <aura:set attribute="title">
+            <lightning:spinner aura:id="loadingSpinner" size="medium" alternativeText="loading" />
+            {!v.relatedList.label}
+        </aura:set>
+        
+       	<aura:set attribute="actions">
+            <div aura:id="ColVisibilityMenu" class="slds-dropdown-trigger slds-dropdown-trigger_click">
+                <lightning:buttonIcon iconName="utility:hide" onclick="{!c.toggleColVisibilityMenu}" alternativeText="Select columns to display"/>
+                <div class="slds-dropdown slds-dropdown_x-small slds-dropdown_right">
+                <ul class="slds-dropdown__list" role="menu">
+					<li class="slds-dropdown__item slds-p-horizontal_medium slds-p-vertical_xx-small slds-truncate" role="presentation">
+                    Select columns to display
+                    </li>
+                    <li class="slds-has-divider_top-space" role="separator"></li>
+                    <aura:iteration items="{!v.relatedList.columns}" var="column" indexVar="indexCol">    
+                        <li class="slds-dropdown__item slds-p-horizontal_medium slds-p-vertical_xx-small slds-truncate" role="presentation">
+                        <lightning:input type="checkbox" label="{!column.fieldApiName}" checked="{#column.isVisible}" value="{!indexCol}" name="ColVis" onchange="{!c.toggleColVisibility}"/>
+                        </li>    
+                    </aura:iteration>    
+                </ul>
+                </div>
+                </div>
+        </aura:set>  
+          
+         <div class="slds-p-horizontal_small" style="100%">
+            <table class="slds-table slds-table_bordered relatedlist" style="margin-bottom:10px">
+             <thead>   
+                 <tr class="slds-text-title_caps">
+                 <aura:iteration items="{!v.relatedList.columns}" var="col">
+                  <th scope="col" class="{!col.isVisible==false || col.fieldType == 'CALCULATED' || and(col.isUpdateable==false, v.hideNonUpdateable) ? 'slds-hide' : 'cellPadding'}">
+                      <div>{!col.fieldApiName}</div>
+                   </th>
+                 </aura:iteration>
+                 <th scope="col"></th>
+                 <th scope="col" class="{!v.displaySaveStatus ? 'shrink' : 'slds-hide'}"></th>     
+                 </tr>
+             </thead>
+                <tbody>   
+                    <aura:iteration items="{!v.records}" var="row" indexVar="indexRow">
+                        <tr class="{!row.isVisible ? ' ' : 'slds-hide'}">
+                            <aura:iteration items="{!row.cells}" var="cell">   
+                                <td class="{!cell.isVisible==false || cell.fieldType == 'CALCULATED' || and(cell.isUpdateable==false, v.hideNonUpdateable) ? 'slds-hide' : 'cellPadding'}">
+                                    <c:massEditInput type="{!v.displayPicklistAsText ? 'standard' : cell.inputMainType}" subType="{!cell.inputSubType}" value="{!cell.value}" selectOptions="{!cell.picklistOptions}" isLocked="{!!cell.isEditable}" objectsForLookupField="{!cell.relationship.objects}" isEditable="false" change="{!c.onFieldChange}"/>
+                                </td>
+                            </aura:iteration>
+                            <td> 
+                                <lightning:buttonIcon iconName="utility:copy" value="{!indexRow}" variant="standard" alternativeText="Clone row" iconClass="dark" onclick="{!c.cloneRow}" class="{!v.relatedList.isRowCreateable ? ' ' : 'slds-hide'}"/>
+                                <lightning:buttonIcon iconName="utility:delete" value="{!indexRow}" variant="standard" alternativeText="Delete row" iconClass="dark" onclick="{!c.deleteRow}" class="{!v.relatedList.isRowDeleteable ? ' ' : 'slds-hide'}"/>
+                            </td>
+                            <td class="{!v.displaySaveStatus ? 'shrink' : 'slds-hide'}">
+                                <c:MassEditToolTip message="{!row.DMLMessage}" iconName="utility:error" tipSide="left" iconVariant="error" iconSize="x-small" class="{!row.DMLError ? 'slds-show_inline' : 'slds-hide'}" tipBGColor="rgb(194, 57, 52);"/>
+                                <lightning:icon iconName="utility:success" size="x-small" class="{!row.DMLError ? 'slds-hide' : 'successIconColor'}"/> 
+                            </td>
+                        </tr>    
+                    </aura:iteration>   
+            </tbody>
+            </table>
+   			            
+            
+    <div aura:id="searchBox" class="slds-form slds-form_compound slds-box slds-hide" style="margin-bottom:10px">
+        <fieldset class="slds-form-element">
+          <legend class="slds-form-element__label slds-text-title_caps" style="margin-bottom:5px">Search and Replace</legend>
+          <div class="slds-form-element__group">
+            <div class="slds-form-element__row">
+              <div class="slds-form-element slds-size_1-of-4">
+                <lightning:input type="text" label="Search for" name="searchFor" value="{!v.searchAndReplace.searchFor}"/>
+              </div>
+              <div class="slds-form-element slds-size_1-of-4">
+              	<lightning:input type="text" label="Replace by" name="replaceBy" value="{!v.searchAndReplace.replaceBy}"/>
+              </div>
+              <div class="slds-form-element slds-size_1-of-4">
+                <label class="slds-form-element__label" for="input-02">Column(s) scope</label>  
+              	<c:massEditInput type="picklist" value="{!v.searchAndReplace.colValue}" selectOptions="{!v.searchAndReplace.columns}" isLockable="false" isLocked="false" isEditable="true"/>
+              </div>
+              <div class="slds-form-element slds-size_1-of-4">
+                <label class="slds-form-element__label" for="input-02">&nbsp;</label>
+                <div class="slds-form-element__control">  
+              		<lightning:button variant="neutral" label="Search and Replace" onclick="{!c.searchAndReplace}" class="margin-top-neg-1px"/>
+                    <lightning:buttonIcon iconName="utility:close" variant="standard" alternativeText="Settings" iconClass="dark" onclick="{!c.closeSearchBox}"/>
+                </div>    
+              </div>  
+            </div>
+          </div>
+          <div class="slds-form-element__row">
+            <div class="slds-form-element slds-size_1-of-4">
+            	<lightning:input type="checkbox" label="Case sensitive ?" name="CaseSensitive" checked="{!v.searchAndReplace.isCaseSensitive}"/>              
+            </div>    
+          </div>    
+        </fieldset>
+    </div> 
+            
+
+          
+         <div class="slds-box slds-p-around_medium">
+          <legend class="slds-form-element__label slds-text-title_caps">Actions</legend>
+          <div style="margin-bottom:10px;margin-top:7px" class="slds-form slds-form_compound">
+          <fieldset class="slds-form-element">    
+          <div class="slds-form-element__row">
+              <div class="slds-form-element">
+              <lightning:input type="checkbox" label="Hide non updateable ?" name="hideNonUpdateable" checked="{!v.hideNonUpdateable}"/>
+              </div>
+              <div class="slds-form-element">
+              <lightning:input type="checkbox" label="Display picklist fields as text ?" name="displayPicklistAsText" checked="{!v.displayPicklistAsText}"/>
+              </div>    
+          </div>
+          </fieldset>  
+          </div>      
+          <!--<lightning:button iconName="utility:info" variant="neutral" label="Debug" onclick="{! c.debug }" class="slds-m-bottom_xx-small" />-->
+          <lightning:button iconName="utility:refresh" variant="neutral" label="Refresh Data" onclick="{! c.doRefresh }" class="slds-m-bottom_xx-small" />   
+          <lightning:button iconName="utility:add" variant="neutral" label="Add Blank Row" onclick="{!c.createRow}" class="{!and(v.displayCreateRowButton,v.relatedList.isRowCreateable) ? 'slds-m-bottom_xx-small' : 'slds-hide'}" />   
+          <lightning:button iconName="utility:search" aura:id="buttonOpenSearchBox" variant="neutral" label="Search and Replace" onclick="{! c.openSearchBox }" class="slds-m-bottom_xx-small"/>
+          <lightning:button iconName="utility:save" variant="{!v.isUnsavedRecords ? 'destructive':'neutral'}" label="Save" onclick="{! c.save }" class="slds-m-bottom_xx-small" />
+          <lightning:button iconName="utility:layout" variant="neutral" label="Columns Layout" onclick="{! c.editLayout }" class="slds-m-bottom_xx-small"/>
+          <lightning:button iconName="utility:picklist" variant="neutral" label="Edit Fields" onclick="{! c.editObjectFields }" class="slds-m-bottom_xx-small"/>
+         
+         </div>   
+            
+        </div>
+      </lightning:card>
+    
+    
+</aura:component>

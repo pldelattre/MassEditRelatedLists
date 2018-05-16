@@ -1,0 +1,28 @@
+.THIS {
+}
+
+.THIS .margin-top-neg-1px{
+    margin-top:-1px;
+}
+
+.THIS .cellPadding {
+    padding: .25rem .2rem;
+}
+
+.THIS .successIconColor svg {
+    fill:green;
+}
+
+.THIS .relatedlist th{
+    word-wrap: break-word; 
+    word-break: break-all;
+    white-space: initial;
+}
+
+.THIS .shrink {
+    padding: 0;
+    padding-right: 2px;
+    margin: 0;
+    width: 1px;
+    white-space: nowrap;   
+}

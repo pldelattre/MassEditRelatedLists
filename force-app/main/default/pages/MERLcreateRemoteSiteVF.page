@@ -1,0 +1,71 @@
+<apex:page sidebar="false" showHeader="false">
+<script>
+function createRemoteSite()
+{
+    // Disable button
+    document.getElementById('createremotesitebtn').disabled = true;
+    // Calls the Metdata API from JavaScript to create the Remote Site Setting to permit Apex callouts
+    var binding = new XMLHttpRequest();
+    var request =
+        '<?xml version="1.0" encoding="utf-8"?>' +
+        '<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">'+
+            '<env:Header>' +
+                '<urn:SessionHeader xmlns:urn="http://soap.sforce.com/2006/04/metadata">' +
+                    '<urn:sessionId>{!$Api.Session_ID}</urn:sessionId>' +
+                '</urn:SessionHeader>' +
+            '</env:Header>' +
+            '<env:Body>' +
+                '<upsertMetadata xmlns="http://soap.sforce.com/2006/04/metadata">' +
+                    '<metadata xsi:type="RemoteSiteSetting">' +
+                        '<fullName>MassEditRL_localhost</fullName>' +
+                        '<description>Metadata API Remote Site Setting for Mass Edit Related Lists Tool</description>' +
+                        '<disableProtocolSecurity>false</disableProtocolSecurity>' +
+                        '<isActive>true</isActive>' +
+                        '<url>https://{!$CurrentPage.parameters.host}.my.salesforce.com</url>' +
+                    '</metadata>' +
+                '</upsertMetadata>' +
+            '</env:Body>' +
+        '</env:Envelope>';
+    binding.open('POST', window.location.origin+'/services/Soap/m/31.0');
+    binding.setRequestHeader('SOAPAction','""');
+    binding.setRequestHeader('Content-Type', 'text/xml');
+    binding.onreadystatechange =
+        function() {
+            if(this.readyState==4) {
+                console.log(this.readyState);console.log(this.status);console.log(this.responseText);
+                var parser = new DOMParser();
+                var doc  = parser.parseFromString(this.response, 'application/xml');
+                console.log(doc);
+                var isSuccessDom = doc.getElementsByTagName('success');
+                var errors = doc.getElementsByTagName('errors');
+                var messageText = '';
+                for(var errorIdx = 0; errorIdx < errors.length; errorIdx++)
+                    messageText+= errors.item(errorIdx).getElementsByTagName('message').item(0).innerHTML + '\n';
+                console.log(messageText);
+                var isSuccess = isSuccessDom[0].innerHTML;
+                var presult = document.getElementById('presult');
+                if (isSuccess == "true") {
+                    presult.innerHTML="Result: Success! You can reload the page now!"
+                    presult.style.color="darkgreen";
+                    }
+                else {
+                    presult.innerHTML = "Result: "+messageText+" Try updating manually the remote site setting!";
+                    presult.style.color="darkred";
+                }
+            }
+        }
+    binding.send(request);
+}
+</script>
+<body class="homeTab" STYLE="background-color:transparent">
+<table>
+<tr>
+  <td>
+      <input id="createremotesitebtn" type="button" onclick="createRemoteSite();" value="Create Remote Site Setting"/>
+  </td>
+  <td id="presult" style="font-weight: bold;"></td>
+</tr>
+</table>
+    
+</body>
+</apex:page>

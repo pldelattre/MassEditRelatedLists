@@ -1,0 +1,92 @@
+<!--
+   	 WELCOME TO MASS EDIT RELATED LIST LIGHTNING COMPONENT
+	 Author : Pierre Delattre (pdelattre@salesforce.com) - May 2018
+	
+ 	 This project is an attempt to help Solutions Engineers save time while preparing demos ;-)
+-->
+
+<aura:component controller="MassEditRLCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName" access="global" >
+	
+     <aura:attribute name="layout" type="Map" description="Our full layout"/>
+	 <aura:attribute name="recordId" type="Id"/>
+     <aura:attribute name="sObjectName" type="string"/>
+  	 <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+     <aura:attribute name="mySessionID" type="string" default="unknown"/>
+     <aura:attribute type="String" name="CleanGID" />
+     <aura:attribute type="String" name="myDomain" />
+     <aura:attribute type="Map" name="namespace" default="{prefix:'',prefixWithDashes:''}" />
+     <aura:attribute type="String" name="loadErrorMessage" default="Unknown Error..."/>
+     <aura:attribute type="String" name="loadStep" default="Initiating..."/>
+     <aura:attribute name="maxRowCountPerRL" type="String" default="30" access="global"/>
+     <aura:attribute type="Boolean" name="isGlobalActionsCardVisible" default="false" />
+     <aura:dependency resource="markup://c:MassEditRLAboutModal" />
+     <aura:dependency resource="markup://c:MassEditRLDeleteChatterPostsModal" />
+    
+    <div class="slds"> 
+        
+      <!-- the following iframe is a hack to get the sessionID which is not available in lightning components -->
+      <!-- this session id is used to query the metadata api -->
+      <iframe aura:id="vfSessionIdFrame" src="{!'https://'+v.myDomain+'.my.salesforce.com/apex/'+v.namespace.prefixWithDashes+'MERLgetSessionIdVF?gid='+v.CleanGID}" style="width: 0; height: 0; border: 0; border: none; position: absolute;"/>
+
+      <!-- following is a visual force to auto create the remote site setting required by Salesforce to call localhost APIs -->  
+      <lightning:card aura:id="createRemoteSiteCard" class="slds-hide slds-card_boundary" >
+       <aura:set attribute="title">
+            Mass Edit Related Lists Initial Setup ?
+        </aura:set>
+        <div class="slds-p-horizontal_x-large">
+         <p>Mass Edit Related Lists couldn't load... This component needs a remote site setting to be allowed querying Salesforce APIs</p>   
+         <p>If you run this component for the first time on this org, the failing reason is very likely that this remote site setting is missing.</p>
+         <p style="margin-bottom:10px">Click on the following button to solve the issue automatically</p>  
+          <iframe src="{!'https://'+v.myDomain+'.my.salesforce.com/apex/'+v.namespace.prefixWithDashes+'MERLcreateRemoteSiteVF?host='+v.myDomain}" style="width: 100%; height: 40px; border: 0; border: none;"/>
+        <p>PS: You can also solve the issue manually in Setup->Security->Remote site settings </p>
+          <p>Add a <b>new remote site</b> pointing to this remote site URL: <b>https://{!v.myDomain}.my.salesforce.com/</b></p> 
+       </div>     
+      </lightning:card>
+        
+       <lightning:card aura:id="unknownErrorCard" class="slds-hide slds-card_boundary" >    
+       <aura:set attribute="title">
+            Mass Edit Related Lists
+        </aura:set>
+        <div class="slds-p-horizontal_x-large">
+         <p>Component failed to load</p>
+         <p>{!v.loadErrorMessage}</p>   
+       </div>     
+      </lightning:card>
+        
+        
+      <lightning:card aura:id="loadingCard" class="slds-card_boundary" >
+        <aura:set attribute="title">
+            Mass Edit Related Lists is loading
+        </aura:set>
+        <div style="height:100px">
+          <p class="slds-p-horizontal_medium">Retreiving related lists layout... {!v.loadStep}</p>  
+          <!-- Session ID is {!v.mySessionID} -->
+          <lightning:spinner aura:id="loadingSpinner" size="medium" alternativeText="loading" />
+        </div>  
+      </lightning:card>
+       
+       <lightning:card class="{!v.isGlobalActionsCardVisible ? 'slds-card_boundary' : 'slds-hide'}">
+            <aura:set attribute="title">
+               Global Actions
+            </aura:set>  
+      	
+           <div class="slds-p-horizontal_medium">
+           <lightning:button iconName="utility:refresh" variant="neutral" label="Full refresh" onclick="{! c.doRefresh }" />    
+           <lightning:button iconName="utility:layout" variant="neutral" label="{!v.sObjectName+' Layout'}" onclick="{! c.editLayout }" />
+           <lightning:button iconName="utility:picklist" variant="neutral" label="{!v.sObjectName+' Fields'}" onclick="{! c.editObjectFields }" /> 
+            <lightning:button iconName="utility:end_chat" variant="neutral" label="Clean chatter" onclick="{! c.cleanChatter }" />         
+           <lightning:button iconName="utility:help" variant="neutral" label="About" onclick="{! c.about }" />     
+           </div>
+               
+        </lightning:card>
+        
+          <div aura:id="modalArea" class="slds-p-bottom_small"></div>
+        
+		  <aura:iteration items="{!v.layout.relatedLists}" var="rl">
+              <c:MassEditRL recordId="{!v.recordId}" sObjectName="{!v.sObjectName}" relatedList="{!rl}" maxRowCount="{!v.maxRowCountPerRL}"/>
+	       </aura:iteration>
+        
+    	
+    </div>
+    
+</aura:component>

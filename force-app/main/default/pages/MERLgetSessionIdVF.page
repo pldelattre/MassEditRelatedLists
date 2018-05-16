@@ -1,0 +1,19 @@
+<apex:page sidebar="false" showHeader="false">
+    Session Id: {!$Api.Session_ID}
+    <br/>
+    GID : {!$CurrentPage.parameters.gid}
+    <script>
+    
+    var lexOrigin = "*";
+    //alert('{!$Api.Session_ID}');
+    function sendToLC() {
+        var message = '{!$CurrentPage.parameters.gid};;;{!$Api.Session_ID}';
+        parent.postMessage(message, lexOrigin);
+    }
+    
+    sendToLC();
+    
+   </script>
+
+    
+</apex:page>

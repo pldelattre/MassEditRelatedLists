@@ -1,0 +1,107 @@
+<aura:component >
+    <aura:attribute name="type" type="String" default="picklist"/>
+    <aura:attribute name="subType" type="String" default="text"/>
+    <aura:attribute name="disabled" type="Boolean" default="false"/>
+    <aura:attribute name="class" type="String"/>
+    <aura:attribute name="selectOptions" type="List" default="[{value:' ',label:' '}, {value:'Example',label:'Example'}]"/>
+    <aura:attribute name="name" type="String"/>
+    <aura:attribute name="value" type="String" default="Option2"/>
+    <aura:attribute name="objectsForLookupField" type="String[]" default="['Contact']"/>
+    <aura:attribute name="placeholder" type="String" default=""/>
+    <aura:attribute name="debugMode" type="Boolean" default="false"/>
+    <aura:attribute name="isLockable" type="Boolean" default="false"/>
+    <aura:attribute name="isLocked" type="Boolean" default="false" description="Text field is displayed as an input text when false"/>
+    <aura:attribute name="isEditable" type="Boolean" default="true" description="Add edit button next to field."/>
+    <aura:attribute name="noPicklistMatch" type="Boolean" default="false"/>
+
+
+    <aura:registerEvent name="change" type="c:massEditInputChangeEvent"/>
+    
+
+    <!-- HANDLERS -->
+    <aura:handler name="change" value="{!v.disabled}" action="{!c.refresh}"/>
+    <aura:handler name="change" value="{!v.value}" action="{!c.refreshPicklist}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+
+
+
+<div>
+    <aura:if isTrue="{!v.type=='standard'}">
+        <aura:if isTrue="{!v.isLocked}">
+            <div class="lockedContainer wrap">
+            {!v.value} &nbsp;
+             <lightning:buttonIcon iconName="utility:edit" variant="bare" size="medium" alternativeText="less" onclick="{!c.unlock}" class="{!v.isEditable == true ? 'editIcon':'slds-hide'}"/> &nbsp; &nbsp;
+           </div>
+            <aura:set attribute="else">
+              <div class="slds-form-element">
+                  <div class="slds-form-element__control">
+                      <input aura:id="myStandardInput" id="text-input-01" class="slds-input" value="{!v.value}" type="{!v.subType}" onchange="{!c.onChange}" placeholder="{!v.placeholder}" onkeydown="{!c.onKeyDown}"/>
+                  </div>
+              </div>
+
+
+            </aura:set>
+
+        </aura:if>
+
+    </aura:if>
+
+
+    <aura:if isTrue="{!v.type=='picklist'}">
+
+        <div class="slds-form-element">
+            <div class="slds-form-element__control">
+                <div class="slds-select_container">
+                    <select aura:id="myPicklist" id="select-01" class="slds-select" onchange="{!c.onChange}" disabled="{!v.isLocked}">
+                        <aura:if isTrue="{!v.noPicklistMatch}">
+                     		<option value="{!v.value}" selected="true" disabled="true">{!v.value}</option>   
+                        </aura:if>    
+                        <aura:iteration items="{!v.selectOptions}" var="option">
+                            <option value="{!option.value}" selected="{!option.value == v.value ? 'true':'false'}">{!option.label}</option>
+                        </aura:iteration>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+    </aura:if>
+	
+    <aura:if isTrue="{!v.type=='checkbox'}">
+
+        <div class="slds-form-element">
+            <div class="slds-form-element__control">
+                    <lightning:input type="checkbox" label="no label" variant="label-hidden" name="options" checked="{!v.value}" onchange="{!c.onChange}" disabled="{!v.isLocked}"/>
+            </div>
+        </div>
+
+    </aura:if>
+    
+     <aura:if isTrue="{!v.type=='calculated'}">
+
+        <div class="slds-form-element">
+            <div class="slds-form-element__control">
+                <!--<img src="/resource/massEditFormulaPng" style="height:25px;width:25px"/>-->
+				<lightning:icon iconName="utility:apex" size="small" alternativeText="Calculated field (not editable)" class="slds-align_absolute-center"/>
+            </div>
+        </div>
+
+    </aura:if>
+    
+    <aura:if isTrue="{!v.type=='lookup'}">
+        <c:MassEditRL_LookupField objectsToSearch="{!v.objectsForLookupField}" selectedItemId="{!v.value}" disabled="{!v.isLocked}"/>
+        
+    </aura:if>    
+    
+    <aura:if isTrue="{!v.type=='undefined'}">
+
+        <div class="slds-form-element wrap">
+          	{!v.value} &nbsp;
+        </div>
+
+    </aura:if>
+
+    <aura:if isTrue="{!v.debugMode}">
+        <lightning:button variant="neutral" label="Debug" onclick="{!c.debug}"/>
+    </aura:if>
+</div>
+</aura:component>

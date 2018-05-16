@@ -1,0 +1,42 @@
+<aura:component controller="MassEditRLCtrl">
+    <aura:attribute name="isApexInProgress" type="Boolean" default="false"/>
+    
+  <div aura:id="about" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+      <div class="slds-modal__header">
+
+        <lightning:buttonicon iconName="utility:close" size="large" alternativeText="icon" class="slds-modal__close" variant="bare-inverse" onclick="{!c.closeModal}"/>
+        <h2 id="header43" class="slds-text-heading--medium">Delete unwanted chatter posts</h2>
+      </div>
+      <div class="slds-modal__content slds-p-around--medium">
+     
+          <p class="slds-p-bottom--x-small">This will delete all chatter posts with type 'create event'. Regular chatter posts won't be impacted.</p>
+     <p class="slds-p-bottom--x-small">Here is an example of a post that would be deleted: </p>
+     <div class="slds-p-bottom--x-small" style="width: 60%; margin: 0 auto;"><img src="{!$Resource.MERL_createPostExample}" class="imgPost"/></div>     
+     <p class="slds-p-bottom--x-small"><span style="color:red;">Please note that delete operation will be performed not only on the current record but on all the salesforce org</span> </p>  
+     <p class="slds-p-bottom--x-small"><b>Are you sure you want to proceed ? </b></p>
+      
+
+      </div>
+      <div class="slds-modal__footer" style="position:relative;height:58px">
+        <aura:if isTrue="{!v.isApexInProgress}">
+        	<div role="status" class="slds-spinner slds-spinner_brand slds-spinner_small" >
+                <span class="slds-assistive-text">Loading</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+        	</div>
+        <aura:set attribute="else">
+            <button class="slds-button slds-button--neutral" onclick="{!c.closeModal}">Cancel</button>
+            <button class="slds-button slds-button--brand" onclick="{!c.deletePosts}">Confirm</button>
+   		</aura:set>
+        </aura:if>
+            
+        
+      </div>
+    </div>
+  </div>
+  <div aura:id="greyzone" class="slds-backdrop slds-backdrop--open"></div>
+
+
+
+</aura:component>

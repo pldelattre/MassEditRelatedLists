@@ -1,0 +1,9 @@
+.THIS {
+}
+
+
+@media (min-width: 10em) and (max-width:48em){
+.THIS .custom-static-position-small-screens {
+    position: static !important;
+}
+}

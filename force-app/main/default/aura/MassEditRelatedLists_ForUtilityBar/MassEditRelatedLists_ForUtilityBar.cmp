@@ -1,0 +1,45 @@
+<aura:component controller="MassEditRLCtrl" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName" access="global" >
+	
+	<aura:attribute name="recordId" type="Id"/>
+    <aura:attribute name="maxRowCountPerRL" type="String" default="30" access="global"/>
+    <aura:attribute name="curRec" type="Map" default="{sObjectName:null,recordName:null}"/>
+    <aura:attribute name="loadedFor" type="Map" default="{sObjectName:'none',recordName:'none'}"/>
+    <aura:attribute name="isLoading" type="Boolean" default="true"/>
+    <aura:attribute name="isStartCompBtnDisabled" type="Boolean" default="true"/>
+    <aura:attribute name="loadLabel" type="String" default="Load"/>
+    
+    <aura:method name="redoInit" action="{!c.doInit}" description="Manually trigger a doInit method"/> 
+    
+    
+    <aura:handler name="change" value="{!v.recordId}" action="{!c.doInit}"/>
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+	<!-- DEBUG
+    Record ID : {!v.recordId}  sObjectName : {!v.curRec.sObjectName}   recordName : {!v.curRec.recordName}<br/>
+	-->
+    
+	<div class="slds-trial-header slds-grid">
+      <div class="slds-grid slds-grid_vertical-align-center">
+         <div aura:id="noRecYetDiv">No record loaded yet</div> 
+         <table aura:id="loadedForTable" class="slds-hide">
+         <tr>
+         
+         <td style="vertical-align:middle;padding-right:10px">Working on :</td>  
+         <td style="vertical-align:middle"><button class="slds-button slds-m-right_small">{!v.loadedFor.sObjectName}</button></td> 
+         <td style="vertical-align:middle;padding-right:10px"><lightning:icon iconName="utility:right" size="x-small"/></td>     
+         <td style="vertical-align:middle"> <button class="slds-button" aria-haspopup="true">{!v.loadedFor.recordName}</button></td> 
+		</tr>    
+        </table> 
+      </div>
+      <div class="slds-grid slds-grid_vertical-align-center slds-col_bump-left">
+        <lightning:button disabled="{!v.isStartCompBtnDisabled}" variant="success" label="{!v.loadLabel+' component for '+v.curRec.sObjectName+' &quot;'+v.curRec.recordName+'&quot;'}" onclick="{! c.startComp }" />
+      </div>
+	</div>
+
+
+    
+    
+    <div aura:id="MassEditRelatedListsContainer"></div>
+    
+</aura:component>

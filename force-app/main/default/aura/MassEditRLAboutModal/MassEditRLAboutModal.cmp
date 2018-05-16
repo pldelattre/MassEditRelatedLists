@@ -1,0 +1,31 @@
+<aura:component >
+
+
+  <div aura:id="about" role="dialog" tabindex="-1" aria-labelledby="header43" class="slds-modal slds-fade-in-open">
+    <div class="slds-modal__container">
+      <div class="slds-modal__header">
+
+        <lightning:buttonicon iconName="utility:close" size="large" alternativeText="icon" class="slds-modal__close" variant="bare-inverse" onclick="{!c.closeModal}"/>
+        <h2 id="header43" class="slds-text-heading--medium">About this tool</h2>
+      </div>
+      <div class="slds-modal__content slds-p-around--medium">
+     
+     <p class="slds-p-bottom--x-small">Hi,</p>
+ 	 <p class="slds-p-bottom--x-small">This component is a side project from a Solution Engineer to save time while preparing demos ;-)</p>
+     <p class="slds-p-bottom--x-small">You found a bug ? You have an improvement suggestion ? You want to say thanks ? </p>  
+     <p class="slds-p-bottom--x-small">Do not hesitate to contact me at <a href="mailto:pdelattre@salesforce.com">pdelattre@salesforce.com</a></p>
+     <p class="slds-p-bottom--x-small">I will do my best to improve the tool</p>
+     <p>Pierre Delattre</p>     
+      
+
+      </div>
+      <div class="slds-modal__footer">
+        <button class="slds-button slds-button--brand" onclick="{!c.closeModal}">Close</button>
+      </div>
+    </div>
+  </div>
+  <div aura:id="greyzone" class="slds-backdrop slds-backdrop--open"></div>
+
+
+
+</aura:component>

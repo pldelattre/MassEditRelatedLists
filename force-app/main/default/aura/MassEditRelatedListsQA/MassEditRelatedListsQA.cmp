@@ -1,0 +1,5 @@
+<aura:component implements="force:lightningQuickAction,force:hasRecordId,force:hasSObjectName" >
+    
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/> 
+    
+</aura:component>

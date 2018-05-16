@@ -1,0 +1,16 @@
+.THIS {
+}
+
+.THIS .editIcon{
+ display:none;
+}
+
+.THIS .wrap {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+.THIS .lockedContainer:hover > .editIcon{
+  display:inline;
+
+}

@@ -1,0 +1,1292 @@
+[
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1526488938835,
+            "changeTime": 1526488938835,
+            "contentHash": "b28b7af69320201d1cf206ebf28373980add1451",
+            "isWorkspace": false,
+            "isArtifactRoot": true
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 96,
+            "modifiedTime": 1526488938835,
+            "changeTime": 1526488938835,
+            "contentHash": "7505d64a54e061b7acd54ccd58b49dc43500b635",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 224,
+            "modifiedTime": 1526488994484,
+            "changeTime": 1526488994484,
+            "contentHash": "15b38eaa0f1748ef7f776c28910feddfb58a0f79",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 384,
+            "modifiedTime": 1526488994535,
+            "changeTime": 1526488994535,
+            "contentHash": "c1befdc8d0a1d9fc94e8fc322cc9775af136255a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 256,
+            "modifiedTime": 1526488994497,
+            "changeTime": 1526488994497,
+            "contentHash": "ddcce96b16d4288371c28e6442cee756680ec522",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.auradoc",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.auradoc",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 209,
+            "modifiedTime": 1526488994494,
+            "changeTime": 1526488994494,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 10074,
+            "modifiedTime": 1526488994495,
+            "changeTime": 1526488994495,
+            "contentHash": "cbe4c14db729099e33c8e951b29d1588f6976aa5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994493,
+            "changeTime": 1526488994493,
+            "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRL.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 385,
+            "modifiedTime": 1526488994496,
+            "changeTime": 1526488994496,
+            "contentHash": "71bc22febb915af95a3c1075d41bfd7de488c0d1",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRLController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRLController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 8364,
+            "modifiedTime": 1526488994496,
+            "changeTime": 1526488994496,
+            "contentHash": "6bdc1fcbe87b61d8f9a47196f4cf1225c1005ca9",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRLHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL/MassEditRLHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 13412,
+            "modifiedTime": 1526488994497,
+            "changeTime": 1526488994497,
+            "contentHash": "1ae10565d9848c67b25d7a7958abc3bb2887c552",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 192,
+            "modifiedTime": 1526488994501,
+            "changeTime": 1526488994501,
+            "contentHash": "7c47436bb0a295eb0025883e410d5655f573cc91",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModal.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModal.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1402,
+            "modifiedTime": 1526488994499,
+            "changeTime": 1526488994499,
+            "contentHash": "c44ed680eae8d1af585c33fe7c14526235d243f5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModal.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModal.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994499,
+            "changeTime": 1526488994499,
+            "contentHash": "4e03f0f0052e52e2d53bf1c3c7212f91e7206772",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModalController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModalController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 82,
+            "modifiedTime": 1526488994500,
+            "changeTime": 1526488994500,
+            "contentHash": "36d89037b4de41983393a46ba1f20922cc0ab660",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModalHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLAboutModal/MassEditRLAboutModalHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 40,
+            "modifiedTime": 1526488994501,
+            "changeTime": 1526488994501,
+            "contentHash": "c3c6efda41de64b759982510d6a2c72226aa087f",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 224,
+            "modifiedTime": 1526488994506,
+            "changeTime": 1526488994506,
+            "contentHash": "148f7e95a5b10c5ddc03d43fc9fd8d1411fe3036",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModal.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModal.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2200,
+            "modifiedTime": 1526488994504,
+            "changeTime": 1526488994504,
+            "contentHash": "79ff5e2a983cf85f97bcf20da2955f4424be92ac",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModal.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModal.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994503,
+            "changeTime": 1526488994503,
+            "contentHash": "4e03f0f0052e52e2d53bf1c3c7212f91e7206772",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModal.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModal.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 100,
+            "modifiedTime": 1526488994504,
+            "changeTime": 1526488994504,
+            "contentHash": "a0c5e9f66852fd2c06289288bce6337323abb8e6",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModalController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModalController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 782,
+            "modifiedTime": 1526488994505,
+            "changeTime": 1526488994505,
+            "contentHash": "32755f535b9a1318d33ca235fd7fef1b3eab39f7",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModalHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRLDeleteChatterPostsModal/MassEditRLDeleteChatterPostsModalHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 249,
+            "modifiedTime": 1526488994506,
+            "changeTime": 1526488994506,
+            "contentHash": "360b199f044d9ea35fc892c4e28930ea15dd7515",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 224,
+            "modifiedTime": 1526488994510,
+            "changeTime": 1526488994510,
+            "contentHash": "982ccf80bb4ae01102ae3302b03df5c421a204e6",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupField.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupField.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 6109,
+            "modifiedTime": 1526488994508,
+            "changeTime": 1526488994508,
+            "contentHash": "0e9c2ac5bdafeb2b9c20b054b4fea5892377ec42",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupField.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupField.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994507,
+            "changeTime": 1526488994507,
+            "contentHash": "4e03f0f0052e52e2d53bf1c3c7212f91e7206772",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupField.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupField.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 141,
+            "modifiedTime": 1526488994509,
+            "changeTime": 1526488994509,
+            "contentHash": "e087623f7fa041bc506d3574950ae27426d284dc",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupFieldController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupFieldController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1281,
+            "modifiedTime": 1526488994510,
+            "changeTime": 1526488994510,
+            "contentHash": "a80b2e685d3ae9f778868e58128941ec899d202e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupFieldHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRL_LookupField/MassEditRL_LookupFieldHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 9468,
+            "modifiedTime": 1526488994510,
+            "changeTime": 1526488994510,
+            "contentHash": "d3146b1a9fa98ede3ecac8daaa67f46e901cb957",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 256,
+            "modifiedTime": 1526488994516,
+            "changeTime": 1526488994516,
+            "contentHash": "881cf34b7fd272591a08c4ae04b2656b9cfd5360",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 5416,
+            "modifiedTime": 1526488994513,
+            "changeTime": 1526488994513,
+            "contentHash": "b24a7ccee00a968b972a2342167ac44afc66b4e9",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994512,
+            "changeTime": 1526488994512,
+            "contentHash": "4e03f0f0052e52e2d53bf1c3c7212f91e7206772",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.design",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.design",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 129,
+            "modifiedTime": 1526488994514,
+            "changeTime": 1526488994514,
+            "contentHash": "c2d7d45d6c9cf9d885fb761d6137d3a3671f7fe8",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.svg",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedLists.svg",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1113,
+            "modifiedTime": 1526488994514,
+            "changeTime": 1526488994514,
+            "contentHash": "c05032c68b7a564df8140c16ce6f17ae2ae34837",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedListsController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedListsController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 5991,
+            "modifiedTime": 1526488994515,
+            "changeTime": 1526488994515,
+            "contentHash": "d8259a7dae78ba3efee9c22f5ed8fd46ca10b23a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedListsHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists/MassEditRelatedListsHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 654,
+            "modifiedTime": 1526488994516,
+            "changeTime": 1526488994516,
+            "contentHash": "e0efcd763a3bc872da60c98948e4c24314a19f11",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1526488994519,
+            "changeTime": 1526488994519,
+            "contentHash": "4266b7666874216932748e2ad0fb683f280b6c7c",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA/MassEditRelatedListsQA.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA/MassEditRelatedListsQA.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 194,
+            "modifiedTime": 1526488994518,
+            "changeTime": 1526488994518,
+            "contentHash": "42178e290e193ec12f81414a552677a878b912cc",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA/MassEditRelatedListsQA.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA/MassEditRelatedListsQA.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994517,
+            "changeTime": 1526488994517,
+            "contentHash": "4e03f0f0052e52e2d53bf1c3c7212f91e7206772",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA/MassEditRelatedListsQAController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedListsQA/MassEditRelatedListsQAController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 416,
+            "modifiedTime": 1526488994519,
+            "changeTime": 1526488994519,
+            "contentHash": "053bc180c69e6b5b33e584d30bd0a5260ffd0786",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 256,
+            "modifiedTime": 1526488994524,
+            "changeTime": 1526488994524,
+            "contentHash": "13ff23a97f3d213054a0a87b0a4d8e6718478550",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2336,
+            "modifiedTime": 1526488994521,
+            "changeTime": 1526488994521,
+            "contentHash": "2ea95f21617be07acb954ce31986373f04498d4a",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994520,
+            "changeTime": 1526488994520,
+            "contentHash": "4e03f0f0052e52e2d53bf1c3c7212f91e7206772",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 9,
+            "modifiedTime": 1526488994522,
+            "changeTime": 1526488994522,
+            "contentHash": "690dd1ee4df0575d78499135bec93071e468c5a4",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.design",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.design",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 129,
+            "modifiedTime": 1526488994523,
+            "changeTime": 1526488994523,
+            "contentHash": "c2d7d45d6c9cf9d885fb761d6137d3a3671f7fe8",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.svg",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBar.svg",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1113,
+            "modifiedTime": 1526488994523,
+            "changeTime": 1526488994523,
+            "contentHash": "c05032c68b7a564df8140c16ce6f17ae2ae34837",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBarController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditRelatedLists_ForUtilityBar/MassEditRelatedLists_ForUtilityBarController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2715,
+            "modifiedTime": 1526488994524,
+            "changeTime": 1526488994524,
+            "contentHash": "e28cdc123804f315eff705785530c2762412af1b",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 224,
+            "modifiedTime": 1526488994528,
+            "changeTime": 1526488994528,
+            "contentHash": "2f1dc5274431c143ff8bd9710a85acb9bd687241",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.auradoc",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.auradoc",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 209,
+            "modifiedTime": 1526488994527,
+            "changeTime": 1526488994527,
+            "contentHash": "fd7f560d82324d6a8255c8c6ebf60698f5f93f1e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1259,
+            "modifiedTime": 1526488994527,
+            "changeTime": 1526488994527,
+            "contentHash": "01dc79da6ae086214201ecd1f60a377230694f67",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994526,
+            "changeTime": 1526488994526,
+            "contentHash": "4e03f0f0052e52e2d53bf1c3c7212f91e7206772",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTip.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 175,
+            "modifiedTime": 1526488994528,
+            "changeTime": 1526488994528,
+            "contentHash": "38c3377969faf8b0c39ea026959616b0f90d5c76",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTipController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/MassEditToolTip/MassEditToolTipController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 60,
+            "modifiedTime": 1526488994529,
+            "changeTime": 1526488994529,
+            "contentHash": "9fc7736232d1d9d7a40c4cea1d6b22e712d8f8b1",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 256,
+            "modifiedTime": 1526488994533,
+            "changeTime": 1526488994533,
+            "contentHash": "e28ab08106d2dc8da582e2ad81aa7125d0c74eab",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInput.cmp",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInput.cmp",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 4568,
+            "modifiedTime": 1526488994531,
+            "changeTime": 1526488994531,
+            "contentHash": "a69d632a83bfa6cc4ea5c9e29447e804bdd852bb",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInput.cmp-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInput.cmp-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994530,
+            "changeTime": 1526488994530,
+            "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInput.css",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInput.css",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 177,
+            "modifiedTime": 1526488994531,
+            "changeTime": 1526488994531,
+            "contentHash": "78664f3b7521bdee257d0c62b1b2cea55aed0378",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInputController.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInputController.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1840,
+            "modifiedTime": 1526488994532,
+            "changeTime": 1526488994532,
+            "contentHash": "0b0693728a407ea233aa8dd721095650d384c9a2",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInputHelper.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInputHelper.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 1788,
+            "modifiedTime": 1526488994533,
+            "changeTime": 1526488994533,
+            "contentHash": "ec93f8161c1a7ebac1e78d9d494e415ded351ada",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInputRenderer.js",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInput/massEditInputRenderer.js",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 565,
+            "modifiedTime": 1526488994534,
+            "changeTime": 1526488994534,
+            "contentHash": "8a9921bdb340828f8d3a020c21196d927e896790",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInputChangeEvent",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInputChangeEvent",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 128,
+            "modifiedTime": 1526488994536,
+            "changeTime": 1526488994536,
+            "contentHash": "c32c566d78b6d53b39ab0a93cf4db3bb27229b1d",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInputChangeEvent/massEditInputChangeEvent.evt",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInputChangeEvent/massEditInputChangeEvent.evt",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 60,
+            "modifiedTime": 1526488994536,
+            "changeTime": 1526488994536,
+            "contentHash": "0ddc754b37200df1baf7f143a74501e58a108645",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInputChangeEvent/massEditInputChangeEvent.evt-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/aura/massEditInputChangeEvent/massEditInputChangeEvent.evt-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 228,
+            "modifiedTime": 1526488994535,
+            "changeTime": 1526488994535,
+            "contentHash": "379d947ebfaf249a903d8b860a7dcc5904e5d4aa",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 320,
+            "modifiedTime": 1526488994469,
+            "changeTime": 1526488994469,
+            "contentHash": "00e69f890fd29ec4967882e58f7119b156e51ade",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrl.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrl.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 39141,
+            "modifiedTime": 1526488994457,
+            "changeTime": 1526488994457,
+            "contentHash": "ceac17d220822ef9c3b783028f0f13690ae41ecc",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrl.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrl.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1526488994455,
+            "changeTime": 1526488994455,
+            "contentHash": "cb0f9f01e3f3aa0ea1a9985ea3caf2b33d167a49",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrlTest.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrlTest.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 2888,
+            "modifiedTime": 1526488994462,
+            "changeTime": 1526488994462,
+            "contentHash": "41d131bca3e296a611c99bcab3a4d89a9f2926bb",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrlTest.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRLCtrlTest.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1526488994461,
+            "changeTime": 1526488994461,
+            "contentHash": "5690448073e1f4fad2748afd55cc064a162b59a5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrl.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrl.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 3348,
+            "modifiedTime": 1526488994466,
+            "changeTime": 1526488994466,
+            "contentHash": "4cc2e860607119913c30c4dfce8f3b4e4a137f05",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrl.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrl.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1526488994465,
+            "changeTime": 1526488994465,
+            "contentHash": "5690448073e1f4fad2748afd55cc064a162b59a5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrlTest.cls",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrlTest.cls",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 392,
+            "modifiedTime": 1526488994470,
+            "changeTime": 1526488994470,
+            "contentHash": "6b61a3261c0f0f86e2efe236f3b2df23223806af",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrlTest.cls-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/classes/MassEditRL_LookupFieldCtrlTest.cls-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 174,
+            "modifiedTime": 1526488994469,
+            "changeTime": 1526488994469,
+            "contentHash": "5690448073e1f4fad2748afd55cc064a162b59a5",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 192,
+            "modifiedTime": 1526488994476,
+            "changeTime": 1526488994476,
+            "contentHash": "34d64ccf105079eca5480837d11611b8dc24681c",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLcreateRemoteSiteVF.page",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLcreateRemoteSiteVF.page",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 3408,
+            "modifiedTime": 1526488994473,
+            "changeTime": 1526488994473,
+            "contentHash": "8f1455cba9566086f66547f775e819e431fe2115",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLcreateRemoteSiteVF.page-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLcreateRemoteSiteVF.page-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 298,
+            "modifiedTime": 1526488994472,
+            "changeTime": 1526488994472,
+            "contentHash": "d2ae41a130257618194dcc4c7f0be7102ca9f0c2",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLgetSessionIdVF.page",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLgetSessionIdVF.page",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 425,
+            "modifiedTime": 1526488994476,
+            "changeTime": 1526488994476,
+            "contentHash": "d2fb6e02a273af175b2709ff95e1768d80940d79",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLgetSessionIdVF.page-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/pages/MERLgetSessionIdVF.page-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 294,
+            "modifiedTime": 1526488994475,
+            "changeTime": 1526488994475,
+            "contentHash": "c86afc848047aa34ee08b9f692a840ff2d3e1f92",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 160,
+            "modifiedTime": 1526488994481,
+            "changeTime": 1526488994481,
+            "contentHash": "e23bf77ca90d8b8eb7f211085728ac95f73977d6",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions/Account.MassEditRelatedListsQA.quickAction-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions/Account.MassEditRelatedListsQA.quickAction-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 369,
+            "modifiedTime": 1526488994478,
+            "changeTime": 1526488994478,
+            "contentHash": "7436f9459a3650b7c330181776b71875ec2e3d78",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions/Contact.MassEditRelatedListsQA.quickAction-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions/Contact.MassEditRelatedListsQA.quickAction-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 369,
+            "modifiedTime": 1526488994480,
+            "changeTime": 1526488994480,
+            "contentHash": "7436f9459a3650b7c330181776b71875ec2e3d78",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions/Opportunity.MassEditRelatedListsQA.quickAction-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/quickActions/Opportunity.MassEditRelatedListsQA.quickAction-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 369,
+            "modifiedTime": 1526488994481,
+            "changeTime": 1526488994481,
+            "contentHash": "7436f9459a3650b7c330181776b71875ec2e3d78",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 192,
+            "modifiedTime": 1526488994491,
+            "changeTime": 1526488994491,
+            "contentHash": "fd12534c6763f2665b65737870a9ab7503531b61",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/MERL_createPostExample.jpeg",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/MERL_createPostExample.jpeg",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 23041,
+            "modifiedTime": 1526488994487,
+            "changeTime": 1526488994487,
+            "contentHash": "cfd4ac8faccf75a175ae3180a8f537a0e16aaf1c",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/MERL_createPostExample.resource-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/MERL_createPostExample.resource-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 205,
+            "modifiedTime": 1526488994484,
+            "changeTime": 1526488994484,
+            "contentHash": "65bd6cd669a881e8c51f0eb58b5a3db71f2ae285",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/massEditAnythingJsonMock.json",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/massEditAnythingJsonMock.json",
+            "isDirectory": false,
+            "isMetadataFile": false,
+            "size": 53811,
+            "modifiedTime": 1526488994491,
+            "changeTime": 1526488994491,
+            "contentHash": "30423d615196109eb3bd15544e06b2f179cd0cdb",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/massEditAnythingJsonMock.resource-meta.xml",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl/force-app/main/default/staticresources/massEditAnythingJsonMock.resource-meta.xml",
+            "isDirectory": false,
+            "isMetadataFile": true,
+            "size": 211,
+            "modifiedTime": 1526488994489,
+            "changeTime": 1526488994489,
+            "contentHash": "105476a3b940ad897342987229ba11a91003e46e",
+            "isWorkspace": false,
+            "isArtifactRoot": false
+        }
+    ],
+    [
+        "/Users/pdelattre/Documents/gitprojects/merl",
+        {
+            "state": "n",
+            "sourcePath": "/Users/pdelattre/Documents/gitprojects/merl",
+            "isDirectory": true,
+            "isMetadataFile": false,
+            "size": 256,
+            "modifiedTime": 1526488959298,
+            "changeTime": 1526488959298,
+            "contentHash": "07da07834d8f50a1018cf646c911906296572a7c",
+            "isWorkspace": true,
+            "isArtifactRoot": false
+        }
+    ]
+]
