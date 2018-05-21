@@ -2,7 +2,7 @@
 
 ## Dev, Build and Test
 
-Deploy automatically on any org : https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1r000000xIs7
+Deploy automatically on any org : https://login.salesforce.com/packaging/installPackage.apexp?p0=04t1r000000xJ0S
 
 ## Post install instructions
 
