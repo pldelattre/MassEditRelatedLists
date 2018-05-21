@@ -9,10 +9,29 @@ public class MassEditRLCtrl {
     @AuraEnabled
     public static OrgInfo fetchOrgInfo(){
         string url = URL.getSalesforceBaseUrl().toExternalForm();
-        string namespace  = [SELECT NamespacePrefix FROM Organization].NamespacePrefix;
+        string namespace  = getNamespacePrefix(); //get namespace in which Mass Edit Related Lists is running.
         OrgInfo org = new OrgInfo(url,namespace);
         return org;
     }
+    
+    // getNamespacePrefix() retrieves the namespace in which the component is running
+    // method will return different answers depending on wheter were are running as managed packaged or as an unmanaged package. 
+    public static String getNamespacePrefix() {
+        String namespacePrefix;
+        String[] classNameParts = String.valueOf(MassEditRLCtrl.class).split('\\.', 2);
+        if(classNameParts.size() > 1) {
+            Type classType = Type.forName(classNameParts[0], classNameParts[1]);
+            if(classType == MassEditRLCtrl.class) {
+                namespacePrefix = classNameParts[0];
+            } else {
+                namespacePrefix = null;
+            }
+        } else {
+            //If there is only one part, the class has no namespace
+            namespacePrefix = null;
+        }
+        return namespacePrefix; 
+	}
     
     @AuraEnabled
     public static MassEditLayout getLayout(string recordId, string sObjectName, string sessionID) {
